@@ -53,14 +53,14 @@ cv2.destroyAllwindows()
 # iii)Convert RGB and BGR to YCrCb
 
 import cv2
-house_HSV_image= cv2.imread('car.jpg')
-cv2.imshow('Original HSV image',house_HSV_image)
-RGB_image = cv2.cvtColor(house_HSV_image, cv2.COLOR_HSV2RGB)
-cv2.imshow('HSV to RGB',RGB_image )
-BGR_image = cv2.cvtColor(house_HSV_image, cv2.COLOR_HSV2BGR)
-cv2.imshow('HSV to BGR',BGR_image)
+houseImage = cv2.imread('bike.jpg')
+cv2.imshow('Original HSV Image',houseImage)
+YCrCb_image = cv2.cvtColor(houseImage, cv2.COLOR_RGB2YCrCb)
+cv2.imshow('BGR2HSV',YCrCb_image)
+YCrCb_image1 = cv2.cvtColor(houseImage, cv2.COLOR_BGR2YCrCb)
+cv2.imshow('RGB2HSV',YCrCb_image1)
 cv2.waitKey(0)
-cv2.destroyAllwindows()
+cv2.destroyAllWindows()
 
 # iv)Split and Merge RGB Image
 import cv2
@@ -93,17 +93,23 @@ cv2.destroyAllWindows()
 ```
 ## Output:
 ### i) BGR and RGB to HSV and GRAY
+![DPIIMG1](https://user-images.githubusercontent.com/94827772/162903299-264076fb-559a-4fca-ad80-a8ee67e3f89d.png)
 
 
 ### ii) HSV to RGB and BGR
+![DPIIMG2](https://user-images.githubusercontent.com/94827772/162903327-901ffc36-06a9-40db-8ce1-e595ccadba22.png)
 
 
 ### iii) RGB and BGR to YCrCb
+![DPIIM3](https://user-images.githubusercontent.com/94827772/162903462-b3f71b05-bf6d-4768-99c7-14982c975ae4.png)
+
 
 ### iv) Split and merge RGB Image
+![DPIIMG3](https://user-images.githubusercontent.com/94827772/162903688-536b17ef-2a1b-4030-bc0e-2516c3c10830.png)
 
 
 ### v) Split and merge HSV Image
+![DPIIMG4](https://user-images.githubusercontent.com/94827772/162903724-c760d9bf-6c6d-4a1d-822d-7e5e6470cfff.png)
 
 
 ## Result:
